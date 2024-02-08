@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,7 +17,8 @@
   <body class="text-indigo-950">
     <!-- Navbar -->
     <nav
-      class="flex flex-row max-w-6xl mx-auto justify-between items-center mt-8"
+      id="navbar"
+      class="sticky top-0 flex flex-row max-w-6xl z-50 mx-auto justify-between items-center py-4 backdrop-blur-md bg-white/10"
     >
       <!-- Nav Logo -->
       <svg
@@ -80,19 +81,16 @@
       <!-- Nav Links -->
       <ul class="flex flex-row gap-x-8">
         <li>
-          <a href="#" class="hover:text-indigo-900">Products</a>
+          <a id="homeLink" href="#hero" class="hover:text-indigo-900">Home</a>
         </li>
         <li>
-          <a href="#" class="hover:text-indigo-900">Services</a>
+          <a id="homeLink" href="#services" class="hover:text-indigo-900">Services</a>
         </li>
         <li>
-          <a href="#" class="hover:text-indigo-900">Pricing</a>
+          <a id="homeLink" href="#ecosystem" class="hover:text-indigo-900">Ecosystem</a>
         </li>
         <li>
-          <a href="#" class="hover:text-indigo-900">Testimonials</a>
-        </li>
-        <li>
-          <a href="#" class="hover:text-indigo-900">Blog</a>
+          <a id="homeLink" href="#showcase" class="hover:text-indigo-900">Showcase</a>
         </li>
       </ul>
 
@@ -148,7 +146,7 @@
     </nav>
 
     <!-- Hero -->
-    <section class="hero max-w-6xl mx-auto">
+    <section id="hero" class="hero max-w-6xl mx-auto">
       <div class="flex flex-row py-16 justify-between items-center">
         <div class="flex flex-col gap-y-10">
           <div
@@ -297,7 +295,7 @@
     </section>
 
     <!-- Brands -->
-    <section class="brands max-w-6xl mx-auto flex flex-row justify-center gap-x-10 py-16">
+    <section id="brands" class="brands max-w-6xl mx-auto flex flex-row justify-center gap-x-10 py-16">
       <img src="assets/src/img/logo-1.svg" alt="Brand 1" class="h-10 grayscale hover:grayscale-0 transition ease-in delay-75">
       <img src="assets/src/img/logo-2.svg" alt="Brand 2" class="h-10 grayscale hover:grayscale-0 transition ease-in delay-75">
       <img src="assets/src/img/logo-3.svg" alt="Brand 3" class="h-10 grayscale hover:grayscale-0 transition ease-in delay-75">
@@ -305,9 +303,9 @@
       <img src="assets/src/img/logo-5.svg" alt="Brand 5" class="h-10 grayscale hover:grayscale-0 transition ease-in delay-75">
     </section>
 
-    <!-- Best Choice -->
-    <section class="best-choice max-w-6xl mx-auto py-16 flex flex-col gap-y-12">
-      <h1 class="text-5xl font-bold text-center">Your Best Choice</h1>
+    <!-- What We Offer -->
+    <section id="services" class="services max-w-6xl mx-auto py-16 flex flex-col gap-y-12">
+      <h1 class="text-5xl font-bold text-center">What We Offer</h1>
       <div class="flex flex-row justify-between">
         <div class="card flex flex-col gap-y-6 px-6 py-8 transition ease-in delay-75 hover:-translate-y-1 hover:scale-110 bg-white hover:bg-indigo-950 hover:text-white rounded-2xl">
           <img src="assets/src/img/icon/hierarchy-square.svg" width="48" alt="Icon hierarchy-square">
@@ -361,7 +359,7 @@
     </section>
 
     <!-- Ecosystem -->
-    <section class="ecosystem max-w-6xl mx-auto py-16 flex flex-row gap-x-24 justify-between items-center">
+    <section id="ecosystem" class="ecosystem max-w-6xl mx-auto py-16 flex flex-row gap-x-24 justify-between items-center">
       <img src="assets/src/img/illustration-ecosystem.jpg" class="w-1/2" alt="illustration-ecosystem">
 
       <div class="flex flex-col gap-y-8 w-2/3">
@@ -487,7 +485,67 @@
     </section>
 
     <!-- Showcase -->
-    <section class="showcase max-w-6xl mx-auto py-16 flex ">
+    <section id="showcase" class="showcase mx-auto py-16 flex flex-col justify-center gap-y-12">
+      <div class="flex flex-col gap-y-4 text-center">
+        <h1 class="text-5xl font-bold">Our Showcase</h1>
+        <p class="leading-loose">
+          They built amazing website to help more people around the world <br />
+          by using our recommendation services and products.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap gap-8 justify-center">
+        <div class="group relative overflow-hidden rounded-2xl">
+          <img src="assets/src/img/showcase-1.jpg" alt="showcase-1" class="hover:scale-110 transition ease-in-out delay-75">
+          <div class="group-hover:opacity-100 opacity-0 absolute justify-center w-full bottom-6 flex">
+            <a
+              href="#"
+              class="bg-violet-700 px-8 py-4 rounded-full text-white font-bold hover:bg-violet-900"
+              >View Detail
+            </a>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-2xl">
+          <img src="assets/src/img/showcase-2.jpg" alt="showcase-2" class="hover:scale-110 transition ease-in-out delay-75">
+          <div class="group-hover:opacity-100 opacity-0 absolute justify-center w-full bottom-6 flex">
+            <a
+              href="#"
+              class="bg-violet-700 px-8 py-4 rounded-full text-white font-bold hover:bg-violet-900"
+              >View Detail
+            </a>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-2xl">
+          <img src="assets/src/img/showcase-3.jpg" alt="showcase-3" class="hover:scale-110 transition ease-in-out delay-75">
+          <div class="group-hover:opacity-100 opacity-0 absolute justify-center w-full bottom-6 flex">
+            <a
+              href="#"
+              class="bg-violet-700 px-8 py-4 rounded-full text-white font-bold hover:bg-violet-900"
+              >View Detail
+            </a>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-2xl">
+          <img src="assets/src/img/showcase-4.jpg" alt="showcase-4" class="hover:scale-110 transition ease-in-out delay-75">
+          <div class="group-hover:opacity-100 opacity-0 absolute justify-center w-full bottom-6 flex">
+            <a
+              href="#"
+              class="bg-violet-700 px-8 py-4 rounded-full text-white font-bold hover:bg-violet-900"
+              >View Detail
+            </a>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-2xl">
+          <img src="assets/src/img/showcase-1.jpg" alt="showcase-1" class="hover:scale-110 transition ease-in-out delay-75">
+          <div class="group-hover:opacity-100 opacity-0 absolute justify-center w-full bottom-6 flex">
+            <a
+              href="#"
+              class="bg-violet-700 px-8 py-4 rounded-full text-white font-bold hover:bg-violet-900"
+              >View Detail
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
