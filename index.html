@@ -151,7 +151,7 @@
     </nav>
 
     <!-- Hero -->
-    <section id="hero" class="hero max-w-xs md:max-w-3xl lg:max-w-6xl mx-auto">
+    <section id="hero" class="hero max-w-xs md:max-w-3xl md:px-12 lg:max-w-6xl lg:px-0 mx-auto">
       <div class="flex flex-col md:flex-row py-8 md:py-16 justify-between items-center">
         <div class="flex flex-col gap-y-10">
           <div
@@ -359,9 +359,9 @@
     </section>
 
     <!-- What We Offer -->
-    <section id="services" class="services max-w-md px-6 md:max-w-3xl md:px-0 lg:max-w-6xl lg:px-0 mx-auto py-16 flex flex-col gap-y-6 md:gap-y-10">
+    <section id="services" class="services max-w-md px-6 md:max-w-3xl md:px-12 lg:max-w-6xl lg:px-0 mx-auto py-16 flex flex-col gap-y-6 md:gap-y-10">
       <h1 class="text-2xl md:text-5xl font-bold text-center">What We Offer</h1>
-      <div class="grid grid-cols-2 md:flex md:flex-row justify-between gap-4">
+      <div class="grid grid-cols-1 md:grid md:grid-cols-2 lg:flex lg:flex-row justify-between gap-4">
         <div class="card flex flex-col gap-y-6 px-4 md:px-6 py-6 md:py-8 transition ease-in delay-75 hover:-translate-y-1 hover:scale-110 bg-white hover:bg-indigo-950 hover:text-white rounded-2xl">
           <img src="assets/src/img/icon/hierarchy-square.svg" width="48" alt="Icon hierarchy-square">
           <div class="text flex flex-col justify-start gap-y-2">
@@ -414,14 +414,14 @@
     </section>
 
     <!-- Ecosystem -->
-    <section id="ecosystem" class="ecosystem max-w-6xl mx-auto py-16 flex flex-row gap-x-24 justify-between items-center">
-      <img src="assets/src/img/illustration-ecosystem.jpg" class="w-1/2" alt="illustration-ecosystem">
+    <section id="ecosystem" class="ecosystem max-w-md px-6 md:max-w-3xl md:px-12 lg:max-w-6xl lg:px-0 mx-auto py-16 flex flex-row gap-x-24 justify-between items-center">
+      <img src="assets/src/img/illustration-ecosystem.jpg" class="w-1/2 hidden lg:block " alt="illustration-ecosystem">
 
-      <div class="flex flex-col gap-y-8 w-2/3">
+      <div class="flex flex-col gap-y-8 w-full lg:w-2/3">
         <div class="flex flex-col gap-y-4">
-          <h1 class="text-5xl font-bold">We Have Very <br> Strong Ecosystem</h1>
-          <p class="leading-loose">
-            We provide a variety of servers to grow your users <br />
+          <h1 class="text-2xl md:text-5xl font-bold">We Have Very <br> Strong Ecosystem</h1>
+          <p class="leading-normal md:leading-loose">
+            We provide a variety of servers to grow your users <br class="hidden md:block"/>
             acquisition much user-friendly and boosting up sales.
           </p>
         </div>
@@ -430,10 +430,10 @@
           <div class="flex flex-rowbg-white p-4 rounded-2xl gap-3 transition ease-in delay-75 hover:-translate-y-1 hover:scale-110 bg-white hover:bg-indigo-950 hover:text-white">
             <img src="assets/src/img/icon/health.svg" alt="icon health">
             <div class="flex flex-col gap-y-1">
-              <h3 class="font-bold text-2xl">
+              <h3 class="font-bold text-base md:text-2xl">
                 $880 Mio
               </h3>
-              <p class="leading-none">
+              <p class="leading-normal md:leading-none text-sm md:text-base">
                 Company budget saved
               </p>
             </div>
@@ -441,10 +441,10 @@
           <div class="flex flex-row p-4 rounded-2xl gap-3 transition ease-in delay-75 hover:-translate-y-1 hover:scale-110 bg-white hover:bg-indigo-950 hover:text-white">
             <img src="assets/src/img/icon/cpu-charge.svg" alt="icon cpu-charge">
             <div class="flex flex-col gap-y-1">
-              <h3 class="font-bold text-2xl">
+              <h3 class="font-bold text-base md:text-2xl">
                 450,392
               </h3>
-              <p class="leading-none">
+              <p class="leading-normal md:leading-none text-sm md:text-base">
                 All servers available
               </p>
             </div>
@@ -452,10 +452,10 @@
           <div class="flex flex-row p-4 rounded-2xl gap-3 transition ease-in delay-75 hover:-translate-y-1 hover:scale-110 bg-white hover:bg-indigo-950 hover:text-white">
             <img src="assets/src/img/icon/cloud-add.svg" alt="icon cloud-add">
             <div class="flex flex-col gap-y-1">
-              <h3 class="font-bold text-2xl">
+              <h3 class="font-bold text-base md:text-2xl">
                 189 Mio
               </h3>
-              <p class="leading-none">
+              <p class="leading-normal md:leading-none text-sm md:text-base">
                 Websites are running good
               </p>
             </div>
@@ -465,14 +465,15 @@
         <div class="flex flex-row items-center gap-x-4">
           <a
             href="#"
-            class="bg-indigo-950 px-8 py-4 rounded-full text-white font-bold hover:bg-indigo-900"
+            class="bg-indigo-950 px-4 md:px-8 py-2 md:py-4 rounded-full text-sm md:text-base text-white font-bold hover:bg-indigo-900"
             >Explore More
           </a>
           <a
             href="#"
-            class="flex flex-row items-center gap-x-2 text-violet-700 hover:text-violet-900 font-bold"
+            class="flex flex-row items-center gap-x-2 text-violet-700 hover:text-violet-900 text-sm md:text-base font-bold"
           >
             <svg
+              class="w-5 md:w-fit"
               width="25"
               height="24"
               viewBox="0 0 25 24"
